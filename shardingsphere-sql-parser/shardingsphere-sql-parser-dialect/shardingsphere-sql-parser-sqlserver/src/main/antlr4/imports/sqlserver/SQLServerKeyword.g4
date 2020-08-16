@@ -19,12 +19,371 @@ lexer grammar SQLServerKeyword;
 
 import Alphabet;
 
-BINARY
-    : B I N A R Y
+ADA
+    : A D A
     ;
 
-ESCAPE
-    : E S C A P E
+BACKUP
+    : B A C K U P
+    ;
+    
+BREAK
+    : B R E A K
+    ;
+    
+BROWSE
+    : B R O W S E
+    ;
+    
+BULK
+    : B U L K
+    ;
+    
+CHECKPOINT
+    : C H E C K P O I N T
+    ;
+    
+CLUSTERED
+    : C L U S T E R E D
+    ;
+    
+COLLATE
+    : C O L L A T E
+    ;
+    
+COMPUTE
+    : C O M P U T E
+    ;
+    
+CONTAINSTABLE
+    : C O N T A I N S T A B L E
+    ;
+    
+DATABASE
+    : D A T A B A S E
+    ;
+    
+DBCC
+    : D B C C
+    ;
+    
+DENY
+    : D E N Y
+    ;
+    
+DISK
+    : D I S K
+    ;
+    
+DISTRIBUTED
+    : D I S T R I B U T E D
+    ;
+    
+DUMP
+    : D U M P
+    ;
+    
+ERRLVL
+    : E R R L V L
+    ;
+    
+//END-EXEC
+//    : E N D - E X E C
+//    ;
+    
+FILE
+    : F I L E
+    ;
+    
+FILLFACTOR
+    : F I L L F A C T O R
+    ;
+    
+FORTRAN
+    : F O R T R A N
+    ;
+    
+FREETEXT
+    : F R E E T E X T
+    ;
+    
+FREETEXTTABLE
+    : F R E E T E X T T A B L E
+    ;
+    
+HOLDLOCK
+    : H O L D L O C K
+    ;
+    
+IDENTITY_INSERT
+    : I D E N T I T Y UL_ I N S E R T
+    ;
+    
+IDENTITYCOL
+    : I D E N T I T Y C O L
+    ;
+   
+INCLUDE
+    : I N C L U D E
+    ;
+    
+INDEX
+    : I N D E X
+    ;
+    
+KILL
+    : K I L L
+    ;
+    
+LINENO
+    : L I N E N O
+    ;
+    
+LOAD
+    : L O A D
+    ;
+    
+MERGE
+    : M E R G E
+    ;
+    
+NOCHECK
+    : N O C H E C K
+    ;
+    
+NONCLUSTERED
+    : N O N C L U S T E R E D
+    ;
+    
+NONE
+    : N O N E
+    ;
+    
+OFF
+    : O F F
+    ;
+    
+OFFSETS
+    : O F F S E T S
+    ;
+    
+OPENDATASOURCE
+    : O P E N D A T A S O U R C E
+    ;
+    
+OPENQUERY
+    : O P E N Q U E R Y
+    ;
+    
+OPENROWSET
+    : O P E N R O W S E T
+    ;
+    
+OPENXML
+    : O P E N X M L
+    ;
+    
+OVER
+    : O V E R
+    ;
+    
+PASCAL
+    : P A S C A L
+    ;
+    
+PERCENT
+    : P E R C E N T
+    ;
+    
+PIVOT
+    : P I V O T
+    ;
+    
+PLAN
+    : P L A N
+    ;
+    
+PRINT
+    : P R I N T
+    ;
+    
+PROC
+    : P R O C
+    ;
+    
+RAISERROR
+    : R A I S E R R O R
+    ;
+    
+READTEXT
+    : R E A D T E X T
+    ;
+    
+RECONFIGURE
+    : R E C O N F I G U R E
+    ;
+    
+REPLICATION
+    : R E P L I C A T I O N
+    ;
+    
+RESTORE
+    : R E S T O R E
+    ;
+    
+REVERT
+    : R E V E R T
+    ;
+    
+ROWCOUNT
+    : R O W C O U N T
+    ;
+    
+ROWGUIDCOL
+    : R O W G U I D C O L
+    ;
+    
+RULE
+    : R U L E
+    ;
+    
+SAVE
+    : S A V E
+    ;
+    
+SECURITYAUDIT
+    : S E C U R I T Y A U D I T
+    ;
+    
+SEMANTICKEYPHRASETABLE
+    : S E M A N T I C K E Y P H R A S E T A B L E
+    ;
+    
+SEMANTICSIMILARITYDETAILSTABLE
+    : S E M A N T I C S I M I L A R I T Y D E T A I L S T A B L E
+    ;
+    
+SEMANTICSIMILARITYTABLE
+    : S E M A N T I C S I M I L A R I T Y T A B L E
+    ;
+    
+SETUSER
+    : S E T U S E R
+    ;
+    
+SHUTDOWN
+    : S H U T D O W N
+    ;
+    
+SQLCA
+    : S Q L C A
+    ;
+    
+STATISTICS
+    : S T A T I S T I C S
+    ;
+    
+TABLESAMPLE
+    : T A B L E S A M P L E
+    ;
+    
+TEXTSIZE
+    : T E X T S I Z E
+    ;
+    
+TOP
+    : T O P
+    ;
+    
+TRAN
+    : T R A N
+    ;
+    
+TRIGGER
+    : T R I G G E R
+    ;
+    
+TRUNCATE
+    : T R U N C A T E
+    ;
+    
+TRY_CONVERT
+    : T R Y UL_ C O N V E R T
+    ;
+    
+TSEQUAL
+    : T S E Q U A L
+    ;
+    
+UNPIVOT
+    : U N P I V O T
+    ;
+    
+UPDATETEXT
+    : U P D A T E T E X T
+    ;
+    
+USE
+    : U S E
+    ;
+    
+WAITFOR
+    : W A I T F O R
+    ;
+    
+//WITHIN GROUP
+//    : W I T H I N G R O U P
+
+WRITETEXT
+    : W R I T E T E X T
+    ;
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+BINARY
+    : B I N A R Y
     ;
 
 HIDDEN_
@@ -43,20 +402,8 @@ PARTITIONS
     : P A R T I T I O N S
     ;
 
-TOP
-    : T O P
-    ;
-
 ROW
     : R O W
-    ;
-
-ROWS
-    : R O W S
-    ;
-
-UNKNOWN
-    : U N K N O W N
     ;
 
 XOR
@@ -65,14 +412,6 @@ XOR
 
 ALWAYS
     : A L W A Y S
-    ;
-
-CASCADE
-    : C A S C A D E
-    ;
-
-CHECK
-    : C H E C K
     ;
 
 GENERATED
@@ -87,32 +426,12 @@ OPTION
     : O P T I O N
     ;
 
-PRIVILEGES
-    : P R I V I L E G E S
-    ;
-
-REFERENCES
-    : R E F E R E N C E S
-    ;
-
-USER
-    : U S E R
-    ;
-
 ROLE
     : R O L E
     ;
 
 START
     : S T A R T
-    ;
-
-TRANSACTION
-    : T R A N S A C T I O N
-    ;
-
-ACTION
-    : A C T I O N
     ;
 
 ALGORITHM
@@ -127,32 +446,12 @@ BLOCKERS
     : B L O C K E R S
     ;
 
-CLUSTERED
-    : C L U S T E R E D
-    ;
-
-NONCLUSTERED
-    : N O N C L U S T E R E D
-    ;
-
-COLLATE
-    : C O L L A T E
-    ;
-
 COLUMNSTORE
     : C O L U M N S T O R E
     ;
 
 CONTENT
     : C O N T E N T
-    ;
-
-CONVERT
-    : C O N V E R T
-    ;
-
-DATABASE
-    : D A T A B A S E
     ;
 
 YEARS
@@ -175,10 +474,6 @@ MINUTES
     : M I N U T E S
     ;
 
-DENY
-    : D E N Y
-    ;
-
 DETERMINISTIC
     : D E T E R M I N I S T I C
     ;
@@ -199,20 +494,12 @@ ENCRYPTED
     : E N C R Y P T E D
     ;
 
-END
-    : E N D
-    ;
-
 FILESTREAM
     : F I L E S T R E A M
     ;
 
 FILETABLE
     : F I L E T A B L E
-    ;
-
-FILLFACTOR
-    : F I L L F A C T O R
     ;
 
 FOLLOWING
@@ -225,10 +512,6 @@ HASH
 
 HEAP
     : H E A P
-    ;
-
-IDENTITY
-    : I D E N T I T Y
     ;
 
 INBOUND
@@ -263,28 +546,12 @@ MOVE
     : M O V E
     ;
 
-NOCHECK
-    : N O C H E C K
-    ;
-
-NONE
-    : N O N E
-    ;
-
 OBJECT
     : O B J E C T
     ;
 
-OFF
-    : O F F
-    ;
-
 ONLINE
     : O N L I N E
-    ;
-
-OVER
-    : O V E R
     ;
 
 PAGE
@@ -323,20 +590,8 @@ REPLICATE
     : R E P L I C A T E
     ;
 
-REPLICATION
-    : R E P L I C A T I O N
-    ;
-
 RESUMABLE
     : R E S U M A B L E
-    ;
-
-ROWGUIDCOL
-    : R O W G U I D C O L
-    ;
-
-SAVE
-    : S A V E
     ;
 
 SCHEMA
@@ -355,16 +610,8 @@ SWITCH
     : S W I T C H
     ;
 
-TRAN
-    : T R A N
-    ;
-
 TRANCOUNT
     : T R A N C O U N T
-    ;
-
-ZONE
-    : Z O N E
     ;
 
 EXECUTE
@@ -373,18 +620,6 @@ EXECUTE
 
 SESSION
     : S E S S I O N
-    ;
-
-CONNECT
-    : C O N N E C T
-    ;
-
-CONNECTION
-    : C O N N E C T I O N
-    ;
-
-CATALOG
-    : C A T A L O G
     ;
 
 CONTROL
@@ -499,10 +734,6 @@ AUTHENTICATE
     : A U T H E N T I C A T E
     ;
 
-EXTERNAL
-    : E X T E R N A L
-    ;
-
 ACCESS
     : A C C E S S
     ;
@@ -511,20 +742,12 @@ ADMINISTER
     : A D M I N I S T E R
     ;
 
-BULK
-    : B U L K
-    ;
-
 OPERATIONS
     : O P E R A T I O N S
     ;
 
 UNSAFE
     : U N S A F E
-    ;
-
-SHUTDOWN
-    : S H U T D O W N
     ;
 
 SCOPED
@@ -565,10 +788,6 @@ DATA
 
 SOURCE
     : S O U R C E
-    ;
-
-FILE
-    : F I L E
     ;
 
 FORMAT
@@ -623,10 +842,6 @@ QUEUE
     : Q U E U E
     ;
 
-RULE
-    : R U L E
-    ;
-
 SYNONYM
     : S Y N O N Y M
     ;
@@ -637,14 +852,6 @@ COLLECTION
 
 SCRIPT
     : S C R I P T
-    ;
-
-KILL
-    : K I L L
-    ;
-
-BACKUP
-    : B A C K U P
     ;
 
 LOG
@@ -665,10 +872,6 @@ QUERY
 
 NOTIFICATIONS
     : N O T I F I C A T I O N S 
-    ;
-
-CHECKPOINT
-    : C H E C K P O I N T
     ;
 
 SEQUENCE
@@ -843,18 +1046,6 @@ ROW_NUMBER
     : R O W UL_ N U M B E R
     ;
 
-FETCH
-    : F E T C H
-    ;
-
-FIRST
-    : F I R S T
-    ;
-
-ONLY
-    : O N L Y
-    ;
-
 MONEY
     : M O N E Y
     ;
@@ -877,10 +1068,6 @@ DATETIME2
 
 SMALLDATETIME
     : S M A L L D A T E T I M E
-    ;
-
-NCHAR
-    : N C H A R
     ;
 
 NVARCHAR
