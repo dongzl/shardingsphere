@@ -1980,4 +1980,9 @@
             </and-predicate>
         </where>
     </select>
+    <select sql-case-id="test_sqlserver_with_keyword">
+        <projections>
+            
+        </projections>
+    </select>
 </sql-parser-test-cases>

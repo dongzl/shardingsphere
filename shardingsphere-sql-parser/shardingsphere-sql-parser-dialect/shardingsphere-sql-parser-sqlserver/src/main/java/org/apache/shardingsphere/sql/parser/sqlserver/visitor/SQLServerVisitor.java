@@ -32,7 +32,6 @@ import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.Boo
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.CastFunctionContext;
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.CharFunctionContext;
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.ColumnNameContext;
-import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.ColumnNameWithSortContext;
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.ColumnNamesContext;
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.DataTypeContext;
 import org.apache.shardingsphere.sql.parser.autogen.SQLServerStatementParser.DataTypeLengthContext;
@@ -226,9 +225,12 @@ public abstract class SQLServerVisitor extends SQLServerStatementBaseVisitor<AST
     @Override
     public final ASTNode visitColumnNames(final ColumnNamesContext ctx) {
         CollectionValue<ColumnSegment> result = new CollectionValue<>();
-        for (ColumnNameWithSortContext each : ctx.columnNameWithSort()) {
+        for (ColumnNameContext each : ctx.columnName()) {
             result.getValue().add((ColumnSegment) visit(each));
         }
+//        for (ColumnNameWithSortContext each : ctx.columnNameWithSort()) {
+//            result.getValue().add((ColumnSegment) visit(each));
+//        }
         return result;
     }
     

@@ -69,7 +69,15 @@ multipleTableNames
     ;
 
 select 
-    : unionClause
+    : withClause_? unionClause
+    ;
+    
+withClause_
+    : WITH cteClause_ (COMMA_ cteClause_)*
+    ;
+    
+cteClause_
+    : ignoredIdentifier_ columnNames? AS subquery
     ;
 
 unionClause
