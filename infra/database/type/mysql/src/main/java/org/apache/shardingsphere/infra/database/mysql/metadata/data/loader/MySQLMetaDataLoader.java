@@ -133,7 +133,7 @@ public final class MySQLMetaDataLoader implements DialectMetaDataLoader {
                 PreparedStatement preparedStatement = connection.prepareStatement(getTableMetaDataSQL(tables))) {
             Map<String, Integer> dataTypes = new DataTypeLoader().load(connection.getMetaData(), getType());
             String databaseName = "".equals(connection.getCatalog()) ? GlobalDataSourceRegistry.getInstance().getCachedDatabaseTables().get(tables.iterator().next()) : connection.getCatalog();
-            preparedStatement.setString(1, databaseName);
+            preparedStatement.setString(1, "mysql");
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
                     String tableName = resultSet.getString("TABLE_NAME");
@@ -163,7 +163,8 @@ public final class MySQLMetaDataLoader implements DialectMetaDataLoader {
     }
     
     private String getTableMetaDataSQL(final Collection<String> tables) {
-        return tables.isEmpty() ? TABLE_META_DATA_SQL : String.format(TABLE_META_DATA_SQL_IN_TABLES, tables.stream().map(each -> String.format("'%s'", each)).collect(Collectors.joining(",")));
+        //return tables.isEmpty() ? TABLE_META_DATA_SQL : String.format(TABLE_META_DATA_SQL_IN_TABLES, tables.stream().map(each -> String.format("'%s'", each)).collect(Collectors.joining(",")));
+        return TABLE_META_DATA_SQL;
     }
     
     private Map<String, Collection<IndexMetaData>> loadIndexMetaData(final DataSource dataSource, final Collection<String> tableNames) throws SQLException {
