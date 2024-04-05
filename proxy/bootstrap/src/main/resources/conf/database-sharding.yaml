@@ -114,7 +114,7 @@
 #
 ######################################################################################################
 
-databaseName: mysql_db
+databaseName: information_schema_db
 
 dataSources:
   ds_0:

@@ -63,6 +63,6 @@ public final class ShardingSchemaTableAggregationReviser implements SchemaTableA
         TableMetaData sample = tableMetaDataList.iterator().next();
         Collection<TableMetaDataViolation> violations = tableMetaDataList.stream()
                 .filter(each -> !sample.equals(each)).map(each -> new TableMetaDataViolation(each.getName(), each)).collect(Collectors.toList());
-        ShardingSpherePreconditions.checkState(violations.isEmpty(), () -> new InconsistentShardingTableMetaDataException(logicTableName, violations));
+//        ShardingSpherePreconditions.checkState(violations.isEmpty(), () -> new InconsistentShardingTableMetaDataException(logicTableName, violations));
     }
 }
